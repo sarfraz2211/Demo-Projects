@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="305dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    android:id="@+id/cardViews"
+    android:padding="0dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:background="@drawable/vertical_main">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/textViewItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:text="@string/technology"
+        android:fontFamily="@font/strawford_regular"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtStep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/notes"
+        android:visibility="gone"
+        android:fontFamily="@font/strawford_black"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+</androidx.cardview.widget.CardView>

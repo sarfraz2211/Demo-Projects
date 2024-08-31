@@ -1,0 +1,182 @@
+<!-- res/layout/item_layout.xml -->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="280dp"
+    android:layout_height="320dp"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="4dp"
+    android:id="@+id/cardViews"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/download">
+
+            <ImageView
+                android:id="@+id/iconTopLefts"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/video"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentStart="true"/>
+
+            <!-- Top Right Icon -->
+            <ImageView
+                android:id="@+id/iconTopRights"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/downdesk"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/textViewItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/technology"
+                android:fontFamily="@font/strawford_regular"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtStep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/notes"
+                android:fontFamily="@font/strawford_black"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/date"
+                android:fontFamily="@font/strawford_light"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:padding="16dp">
+
+        <!-- Content Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:src="@drawable/download" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:id="@+id/textViewItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/technology"
+                    android:fontFamily="@font/strawford_regular"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/notes"
+                    android:fontFamily="@font/strawford_black"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/date"
+                    android:fontFamily="@font/strawford_light"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Top Left Icon -->
+        <ImageView
+            android:id="@+id/iconTopLeft"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/video"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Top Right Icon -->
+        <ImageView
+            android:id="@+id/iconTopRight"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/downdesk"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
